@@ -1,0 +1,36 @@
+/* Style pour la barre de navigation */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navbar-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Style pour le footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
