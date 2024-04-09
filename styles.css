@@ -1,21 +1,32 @@
+/* Style pour le body */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 /* Style pour la barre de navigation */
 nav {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Ajout pour aligner verticalement */
 }
 
-.navbar-left {
+.navbar-content {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar-left a {
     color: #fff;
     text-decoration: none;
     margin-right: 20px;
+}
+
+.navbar-right {
+    margin-left: auto;
 }
 
 .navbar-right a {
