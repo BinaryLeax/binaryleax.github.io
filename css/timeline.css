@@ -1,0 +1,56 @@
+.timeline {
+    position: relative;
+    left: 25%;
+    max-width: 1200px; /* Largeur maximale de la timeline */
+    margin: 50px auto; /* Centrer la timeline */
+    padding: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 19px;
+    width: 2px; /* Largeur de la ligne de la timeline */
+    background-color: #007bff; /* Couleur de la ligne de la timeline */
+    margin-left: -1px; /* Décaler de moitié la largeur pour centrer la ligne */
+}
+
+.timeline-event {
+    position: relative;
+    width: 50%;
+    margin: 80px 0;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -6px; /* Décaler à gauche pour aligner avec la ligne de la timeline */
+    width: 12px; /* Diamètre de la bulle */
+    height: 12px; /* Diamètre de la bulle */
+    background-color: #007bff; /* Couleur de la bulle */
+    border-radius: 50%; /* Forme de la bulle */
+    transform: translateY(-50%); /* Centrer la bulle verticalement */
+}
+
+.timeline-content {
+    position: relative;
+    padding: 15px;
+    background-color: #f8f9fa; /* Couleur de fond de la zone de contenu */
+    border-radius: 5px; /* Coins arrondis de la zone de contenu */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Ombre légère */
+}
+
+.timeline-date {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff; /* Couleur de la date */
+}
+
+.timeline-description {
+    line-height: 24px;
+    margin-top: 10px;
+    color: #555; /* Couleur de la description */
+}

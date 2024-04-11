@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille technologique</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Lien vers le fichier CSS pour le style -->
+    <link rel="stylesheet" href="css/navbar.css"> <!-- Lien vers le fichier CSS pour le style -->
+</head>
+<body>
+    <nav>
+        <div class="navbar-content"></div>
+            <div class="navbar-left">
+                <a href="index.html">Axel Marty</a>
+            </div>
+            <div class="navbar-right">
+                <a href="index.html#parcours">Parcours</a>
+                <a href="index.html#bts-sio">BTS SIO</a>
+                <a href="competences.html">Compétences</a>
+                <a href="experiences.html">Expériences</a>
+                <a href="projets.html">Projets</a>
+                <a href="veille.html">Veille technologique</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="contenuPage"> 
+        <h1>Veille technologique</h1>
+        <h2>Git</h2>
+        <p class="clair">Git est un système de contrôle de version utilisé pour suivre les modifications apportées aux fichiers et au code source dans les projets de développement logiciel. Il permet aux développeurs de collaborer efficacement en enregistrant les modifications sous forme de "commits" et en gérant les différentes versions du projet. Chaque utilisateur possède une copie complète de l'historique des modifications, ce qui facilite le travail hors ligne et la collaboration avec d'autres développeurs. Git est largement utilisé dans l'industrie du développement logiciel pour sa flexibilité, sa puissance et sa facilité d'utilisation.</p>
+        <div class="conteneur-principal">
+            <div class="sous-conteneur-tiers-g">
+                <div>
+                    <img src="img/git2-38.webp" alt="Description de l'image">
+                    <h3>Highlights de Git 2.38</h3>
+                    <p class="clair">Git 2.38 présente Scalar pour la gestion des dépôts volumineux et l'option --update-refs pour le rebase. Les contributions du Google Summer of Code incluent l'intégration de l'index sparse et des améliorations des bitmaps. D'autres améliorations comprennent l'intégration de merge-tree avec ort, l'amélioration de git grep et la personnalisation de la sortie de git ls-files. Les lecteurs sont encouragés à consulter les notes de version pour plus de détails.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2022-10-03-highlights-from-git-2-38/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+            <div class="sous-conteneur-tiers">
+                <div>
+                    <img src="img/scalar1.webp" alt="Description de l'image">
+                    <h3>L'histoire de Scalar</h3>
+                    <p class="clair">Lorsque vous installez Git v2.38, vous découvrirez un nouvel outil exécutable appelé Scalar. Scalar permet d'utiliser les dernières fonctionnalités de Git pour travailler avec de grands dépôts. En passant de git clone à scalar clone, vous obtiendrez des fonctionnalités de performance telles que le clonage partiel, le retrait épars, la maintenance en arrière-plan, etc. Scalar est le fruit d'un long parcours et a été développé en suivant des principes clés. Son intégration dans Git marque une étape importante dans son évolution.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2022-10-13-the-story-of-scalar/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+            <div class="sous-conteneur-tiers-d">
+                <div>
+                    <img src="img/Group-3.webp" alt="Description de l'image">
+                    <h3>Git : patch de vulnérabilités</h3>
+                    <p class="clair">Git a publié des mises à jour pour corriger deux vulnérabilités (CVE-2022-39253, CVE-2022-39260) affectant les versions 2.38 et antérieures. La première concerne le clonage local de Git, permettant la création de liens symboliques malveillants dans le répertoire d'objets de Git. La seconde, CVE-2022-39260, découle d'un dépassement de capacité dans la fonction split_cmdline() de git shell, pouvant entraîner l'exécution de code arbitraire. GitHub a réagi en lançant des versions de GitHub Desktop pour bloquer ces failles et en planifiant des mises à jour pour GitHub Codespaces et GitHub Actions.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2022-10-18-git-security-vulnerabilities-announced/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteneur-principal">
+            <div class="sous-conteneur-tiers-g">
+                <div>
+                    <img src="img/git2-39.webp" alt="Description de l'image">
+                    <h3>Highlights de Git 2.39</h3>
+                    <p class="clair">La version 2.39 de Git est sortie, apportant diverses fonctionnalités et correctifs. Parmi les points forts, git shortlog devient plus souple en agrégeant les commits selon des spécificateurs de format arbitraires. De plus, Git introduit des améliorations de sécurité, comme le rejet des patches de plus de ~1 GiB pour éviter les débordements d'entiers. Enfin, le processus de vérification de la connectivité lors des poussées est amélioré pour une exécution plus rapide.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2022-12-12-highlights-from-git-2-39/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+            <div class="sous-conteneur-tiers">
+                <div>
+                    <img src="img/git2-40.webp" alt="Description de l'image">
+                    <h3>Highlights de Git 2.40</h3>
+                    <p class="clair">Dans Git 2.40, plusieurs améliorations sont notables. git jump est désormais compatible avec Emacs en plus de Vim. De plus, git cat-file et --batch-check respecteront l'option --use-mailmap pour rapporter correctement la taille des objets. check-attr prend en charge --source= pour rechercher les .gitattributes, éliminant le besoin de manipulations temporaires. Enfin, les CI spécifiques à Windows ont été désactivées, accélérant les exécutions CI et réduisant les ressources.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2023-03-13-highlights-from-git-2-40/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+            <div class="sous-conteneur-tiers-d">
+                <div>
+                    <img src="img/git2-41.webp" alt="Description de l'image">
+                    <h3>Highlights de Git 2.41</h3>
+                    <p class="clair">Dans Git 2.41, des améliorations significatives sont introduites. D'abord, la gestion des objets inaccessibles est optimisée via des "packs cruft", facilitant la compression de la taille des dépôts. Ensuite, les index inversés sur disque sont automatiquement générés, améliorant les performances pour les opérations comme les poussées ou la détermination de la taille des objets. De plus, le protocole d'assistant d'identification est étendu pour prendre en charge les en-têtes WWW-Authenticate, permettant un accès plus fin aux dépôts Git. Enfin, l'option --porcelain pour git fetch facilite l'analyse des résultats, et fetch.hideRefs accélère les opérations sur les dépôts avec de nombreux remotes.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2023-06-01-highlights-from-git-2-41/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteneur-principal">
+            <div class="sous-conteneur-tiers-g">
+                <div>
+                    <img src="img/git2-42.webp" alt="Description de l'image">
+                    <h3>Highlights de Git 2.42</h3>
+                    <p class="clair">La version 2.42 de Git apporte des améliorations significatives, notamment une nouvelle stratégie de traversée de bitmap pour des performances accrues, une exclusion plus efficace des références avec for-each-ref, la possibilité de conserver des objets inaccessibles, un support complet de l'index épars pour diff-tree, des correctifs de bugs et des améliorations dans la gestion des étiquettes, ainsi qu'un nouveau mode -Z pour git cat-file, améliorant la robustesse de la commande.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2023-08-21-highlights-from-git-2-42/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+            <div class="sous-conteneur-tiers">
+                <div>
+                    <img src="img/git2-43.webp" alt="Description de l'image">
+                    <h3>Highlights de Git 2.43</h3>
+                    <p class="clair">Git 2.43 introduit des améliorations majeures dans la commande git repack, permettant désormais de gérer plusieurs "cruft packs" pour stocker de manière plus efficace les objets inaccessibles, et de fractionner les dépôts selon des filtres d'objets spécifiés. Cette version inclut également des fonctionnalités pour éviter les réversions répétées, améliorer git format-patch et offrir de nouvelles options de format pour git log et git for-each-ref. En outre, le système d'intégration continue de Git a été amélioré pour annuler les exécutions CI en cours lors de nouveaux envois sur des branches en cours de vérification et pour utiliser et rapporter les résultats à Coverity, un outil d'analyse statique.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2023-11-20-highlights-from-git-2-43/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+            <div class="sous-conteneur-tiers-d">
+                <div>
+                    <img src="img/git2-44.webp" alt="Description de l'image">
+                    <h3>Highlights de Git 2.44</h3>
+                    <p class="clair">La version 2.44 de Git apporte des améliorations majeures pour accélérer les opérations courantes. Désormais, la génération de packs est plus rapide grâce à la réutilisation efficace des packs existants lors des transferts. De plus, git replay offre des rebases plus rapides et polyvalents, même dans des contextes non interactifs. Les options comme --autosquash sont désormais disponibles pour les rebases non interactifs. Les messages d'avis sont personnalisables, tandis que les optimisations de git for-each-ref améliorent les performances. Enfin, les fonctionnalités de pathspec sont étendues pour une sélection plus précise des fichiers. Ces mises à jour visent à rendre les opérations quotidiennes de Git plus fluides et plus efficaces pour les utilisateurs.</p>
+                    <div class="bouton-container"><a href="https://github.blog/2024-02-23-highlights-from-git-2-44/" class="bouton">Lire l'article</a></div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 MARTY Axel.</p>
+    </footer>
+</body>
+</html>
